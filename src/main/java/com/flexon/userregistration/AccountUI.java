@@ -26,6 +26,10 @@ public class AccountUI {
 		
 		System.out.println("******* \n "
 				+ "User created successfully!");
+		
+	    UserDAO users = new UserDAO();
+	    users.addUser(new_user);
+	    users.printUserInfo(new_user);
 	}
 	
 	private static void inputFirstName(User new_user, Scanner scan) {
